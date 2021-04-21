@@ -1,0 +1,23 @@
+int x1, x2, x3;
+int x4[100];
+void main(void)
+begin
+    read y[3 + z[2]];
+    while true do
+    begin
+        read z;
+        write 5+z -2 +2 +3;
+        return;
+    end
+    x=z+y;
+end
+
+int foo(int x, boolean x5, void foobar)
+begin
+    if x+3 then read y;
+    read z;
+    write X[y+z];
+    return 5;
+    if true then read z;
+    else read y;
+end
