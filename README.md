@@ -1,2 +1,2 @@
 # School
-Contains all Computer Science School work
+All Computer Science School work
