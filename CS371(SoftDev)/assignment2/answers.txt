@@ -1,0 +1,8 @@
+1. Time estimate: 4h
+
+2. Thought/Design: 1h
+   Programming: 1h
+   Debugging: 3h
+   Total: 5h
+
+3. 80% most time spent fixing previous code

@@ -1,0 +1,12 @@
+Circle.java
+put an if statment to check if the factor for the scale funtion is not negative, if it is just return without changing anything
+Also inside the scale function changed the plus(+) to multiply(*) to get correct scaling
+
+Circle1.java
+completly re did the intersects function. It was not finding all intersections. Changes similar to Circle2.java
+intersects function now finds the bigger radius and saves it to find if the circles intersect
+
+Circle2.java
+The x and y values were switched inside the constructor  from super(y,x,radius); ->  super(x,y,radius);
+The intersects function just needed to check with both radii instead of just one. It now adds the radius of both circles and compares with d
+The intersects function now also checks if a circle is inside of it. If it is then they dont intersect

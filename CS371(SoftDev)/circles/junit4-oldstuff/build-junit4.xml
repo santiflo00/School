@@ -1,0 +1,38 @@
+<!-- Sample Ant build file for Circles -->
+<!-- Jonathan Cook, 5 Nov 2015 -->
+<project name="circles" default="compile">
+
+   <!-- property to allow ant to find junit -->
+   <property name="libdir" location="/home/jcook/lib"/>
+   <property name="junitlibs" location="${libdir}/junit-4.12.jar:${libdir}/hamcrest-core-1.3.jar"/>
+
+   <!-- standard compile task, but turn debugging on for source viewing -->
+   <target name="compile" description="compile the source">
+      <javac srcdir="." includeantruntime="false" debug="true" classpath="${junitlibs}"/>
+   </target>
+
+   <!-- standard run task -->
+   <target name="run" description="run CircleRun" depends="compile">
+      <echo message="Run some circles! args: 1 2 4 4 5 4"/>
+      <java classname="CircleRun" fork="true">
+         <arg value="1"/><arg value="2"/><arg value="4"/>
+         <arg value="4"/><arg value="5"/><arg value="4"/>
+      </java>
+   </target>
+
+   <!-- Execute JUnit tests for Circle1 -->
+   <target name="junit" depends="compile">
+      <java classname="org.junit.runner.JUnitCore" classpath=".:${junitlibs}" fork="true">
+         <arg value="Circle1Test"/>
+      </java>
+   </target>
+
+   <!-- clean up by removing all generated files; do "ant clean" to start afresh -->
+   <target name="clean">
+      <delete>
+         <fileset dir="." includes="*.class jacoco.exec"/>
+      </delete>
+   </target>
+
+</project>
+

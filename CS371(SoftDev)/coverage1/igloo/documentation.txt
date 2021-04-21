@@ -1,0 +1,3 @@
+In function overall score in IglooScore1.java the if statement was setting the wrong score that was to be subtracted. Also IglooScore1.java did not have parameters for keeping the score between 0 and 50 which was added.
+
+In IglooScore2.java the function overallScore the case for when all the numbers are the same had incorrect output. 
