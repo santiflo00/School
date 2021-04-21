@@ -1,0 +1,13 @@
+Lab1 Report
+
+Santiago Flores
+9/1/2020
+
+Intro: The algorithm for finding the a certain fibonacci number with a given input runs too slow at high numbers. The first method of finding the fibonacci numbers uses recursion giving it an exponetial run time.
+
+Method: To run through the test, just input 'python fibonacciTest.py'. This file first test that the two fibonacci are accurate by finding the first 10 numbers in the fibonacci sequence and comparing them to an array that is hard coded with the correct values. If it fails it will return saying if failed with which index number, otherwise it will print out saying it passed the test. After the test run it will ask for user input. Each function will find the number with the given input and return an answer along with the running time. On my personal computer, input after 35 would take too long to find and not work properly.
+
+Result: The file fibonacciGraph.py runs the two fibonacci functions, obtains the running time, and prints out the graph 'fibonacciGraph.png'. The graph uses every five values from 1 to 35 and fibonacciGraph.py can be run by inputing 'python3 fibonacciGraph.py
+
+Conclusion: The functions had similar runtimes until n=25 on my pc. After n=25 the polynomial(fib2) algorithm runs MUCH faster
+

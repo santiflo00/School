@@ -1,0 +1,44 @@
+Big O Notation
+Big O is worst case senario   f = O(g)  f <= g
+Omega is best case senario    f = omega(g) g = O(f)
+Theta is worst and best case are equal  f = theta(g) f = O(g) and f = omega(g)
+
+f1(n) = n^2
+f2(n) = 2n+20
+f3(n) = n + 1
+
+1 < logn < sqrt(n) < n < nlogn < n^2 < n^3 < ... < 2^n < n! < n^n
+
+Iterative Mergesort
+
+Divide and conquer strategy
+Solves a problem by:
+-Breaking it into subproblems
+-Recursivly solving
+-Appropriately combining
+Correctness can be proven by mathematical induction
+computational cost can be found by solving recurrence relations
+implemented as recursive procedures
+
+Binary Search
+
+Quicksort
+Choose a pivot
+While i<j
+	increment j until you find an element greater than pivot
+	decrement j until you find an element smaller than pivot
+	if i<j
+	then swap(A[i],A[j])
+swap(A[i],A[j])
+return j //changing the pivot
+
+
+
+
+
+
+
+
+
+
+
